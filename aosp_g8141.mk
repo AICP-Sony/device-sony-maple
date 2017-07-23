@@ -17,7 +17,7 @@ TARGET_KERNEL_CONFIG := aosp_yoshino_maple_defconfig
 # Inherit from those products. Most specific first.
 $(call inherit-product, device/sony/maple/device.mk)
 $(call inherit-product, frameworks/native/build/phone-xhdpi-2048-dalvik-heap.mk)
-$(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 PRODUCT_NAME := aosp_g8141
 PRODUCT_DEVICE := maple

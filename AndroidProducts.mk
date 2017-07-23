@@ -12,6 +12,5 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-PRODUCT_MAKEFILES := $(LOCAL_DIR)/aosp_g8141.mk \
-                     $(LOCAL_DIR)/aosp_g8142.mk
+PRODUCT_MAKEFILES := $(LOCAL_DIR)/aicp_maple.mk
 
