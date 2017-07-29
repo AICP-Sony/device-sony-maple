@@ -12,11 +12,20 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# Bootanimation
-TARGET_BOOTANIMATION_SIZE := 1080x608
+# Boot animation
+TARGET_SCREEN_HEIGHT := 1920
+TARGET_SCREEN_WIDTH := 1080
+-include vendor/aicp/configs/bootanimation.mk
 
-# Inherit device parts
+TARGET_KERNEL_SOURCE := kernel/sony/msm
+TARGET_COMPILE_WITH_MSM_KERNEL := true
+TARGET_KERNEL_CONFIG := aosp_yoshino_maple_defconfig
+
+# Inherit from those products. Most specific first.
 $(call inherit-product, device/sony/maple/aosp_g8142.mk)
+$(call inherit-product, device/sony/yoshino/platform.mk)
+$(call inherit-product, frameworks/native/build/phone-xhdpi-2048-dalvik-heap.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Inherit some common AICP stuff.
 $(call inherit-product, vendor/aicp/configs/common.mk)
@@ -24,17 +33,22 @@ $(call inherit-product, vendor/aicp/configs/common.mk)
 # Inherit telephony stuff
 $(call inherit-product, vendor/aicp/configs/telephony.mk)
 
-# Inherit Omni GSM telephony parts
+# Inherit AICP GSM telephony parts
+$(call inherit-product, vendor/aicp/configs/gsm.mk)
 PRODUCT_PROPERTY_OVERRIDES += \
     telephony.lteOnGSMDevice=1
 
-# Override Product Name for OmniROM
+# Override Product Name for AICP
 PRODUCT_NAME := aicp_maple
+PRODUCT_DEVICE := maple
 PRODUCT_MODEL := Xperia XZ Premium
+PRODUCT_BRAND := Sony
+PRODUCT_MANUFACTURER := Sony
+TARGET_VENDOR := sony
 
 # Assert
 TARGET_OTA_ASSERT_DEVICE := G8142,maple
 
-# Inherit OmniROM parts
-$(call inherit-product, vendor/aicp/config/gsm.mk)
-
+# AICP Device Maintainers
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    DEVICE_MAINTAINERS="AndroPlus"
