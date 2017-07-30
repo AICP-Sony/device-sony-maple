@@ -78,6 +78,10 @@ PRODUCT_PACKAGES += \
     InCallUI \
     Stk
 
+# Snap camera
+PRODUCT_PACKAGES += \
+    Snap
+
 PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREBUILT_DPI := xxhdpi xhdpi hdpi
 PRODUCT_AAPT_PREF_CONFIG := xxhdpi
