@@ -21,6 +21,13 @@ TARGET_KERNEL_SOURCE := kernel/sony/msm
 TARGET_COMPILE_WITH_MSM_KERNEL := true
 TARGET_KERNEL_CONFIG := aosp_yoshino_maple_defconfig
 
+# Encryption / Keymaster
+TARGET_HW_DISK_ENCRYPTION := true
+TARGET_CRYPTFS_HW_PATH := vendor/qcom/opensource/cryptfs_hw
+TARGET_KEYMASTER_WAIT_FOR_QSEE := true
+
+AUDIO_FINE_TUNED_OPTIMIZATIONS := true
+
 # Inherit from those products. Most specific first.
 $(call inherit-product, device/sony/maple/aosp_g8142.mk)
 $(call inherit-product, device/sony/yoshino/platform.mk)
