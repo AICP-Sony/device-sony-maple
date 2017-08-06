@@ -26,6 +26,11 @@ TARGET_HW_DISK_ENCRYPTION := true
 TARGET_CRYPTFS_HW_PATH := vendor/qcom/opensource/cryptfs_hw
 TARGET_KEYMASTER_WAIT_FOR_QSEE := true
 
+USE_DEVICE_SPECIFIC_CAMERA := true
+DEVICE_SPECIFIC_CAMERA_PATH := hardware/sony/camera
+USE_DEVICE_SPECIFIC_DATASERVICES := true
+DEVICE_SPECIFIC_DATASERVICES_PATH := vendor/qcom/opensource/dataservices
+
 AUDIO_FINE_TUNED_OPTIMIZATIONS := true
 
 # Inherit from those products. Most specific first.

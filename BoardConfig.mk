@@ -22,4 +22,4 @@ NXP_CHIP_FW_TYPE := PN553
 
 BOARD_KERNEL_CMDLINE += androidboot.hardware=maple
 
-TARGET_TAP_TO_WAKE_NODE := "/sys/devices/virtual/input/clearpad/wakeup_gesture"
+#TARGET_TAP_TO_WAKE_NODE := "/sys/devices/virtual/input/clearpad/wakeup_gesture"
