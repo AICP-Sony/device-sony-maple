@@ -50,6 +50,12 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.sensor.barometer.xml:system/etc/permissions/android.hardware.sensor.barometer.xml \
     frameworks/native/data/etc/android.hardware.sensor.gyroscope.xml:system/etc/permissions/android.hardware.sensor.gyroscope.xml
 
+# Lowi
+PRODUCT_COPY_FILES += \
+    $(DEVICE_PATH)/rootdir/vendor/lib64/liblowi_client.so:vendor/lib64/liblowi_client.so \
+    $(DEVICE_PATH)/rootdir/vendor/lib64/liblowi_wifihal.so:vendor/lib64/liblowi_wifihal.so \
+    $(DEVICE_PATH)/rootdir/vendor/lib64/liblowi_wifihal_nl.so:vendor/lib64/liblowi_wifihal_nl.so
+
 # Device Init
 PRODUCT_PACKAGES += \
     init.recovery.maple \
