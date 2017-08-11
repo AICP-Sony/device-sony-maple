@@ -50,10 +50,16 @@ $(call inherit-product, vendor/aicp/configs/gsm.mk)
 PRODUCT_PROPERTY_OVERRIDES += \
     telephony.lteOnGSMDevice=1
 
+# DualSim
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.multisim.config=dsds \
+    persist.radio.multisim.config=dsds \
+    ro.telephony.default_network=9,1
+
 # Override Product Name for AICP
 PRODUCT_NAME := aicp_maple
 PRODUCT_DEVICE := maple
-PRODUCT_MODEL := Xperia XZ Premium
+PRODUCT_MODEL := Xperia XZ Premium Dual
 PRODUCT_BRAND := Sony
 PRODUCT_MANUFACTURER := Sony
 TARGET_VENDOR := sony
