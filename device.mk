@@ -56,6 +56,11 @@ PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/rootdir/vendor/lib64/liblowi_wifihal.so:system/vendor/lib64/liblowi_wifihal.so \
     $(DEVICE_PATH)/rootdir/vendor/lib64/liblowi_wifihal_nl.so:system/vendor/lib64/liblowi_wifihal_nl.so
 
+# tof
+PRODUCT_COPY_FILES += \
+    $(DEVICE_PATH)/rootdir/system/lib/sensors.hal.tof.so:system/lib/sensors.hal.tof.so \
+    $(DEVICE_PATH)/rootdir/system/etc/sensors/hals.conf:system/etc/sensors/hals.conf
+
 # Device Init
 PRODUCT_PACKAGES += \
     init.recovery.maple \
