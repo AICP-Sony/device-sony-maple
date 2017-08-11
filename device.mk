@@ -54,7 +54,8 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/rootdir/vendor/lib64/liblowi_client.so:system/vendor/lib64/liblowi_client.so \
     $(DEVICE_PATH)/rootdir/vendor/lib64/liblowi_wifihal.so:system/vendor/lib64/liblowi_wifihal.so \
-    $(DEVICE_PATH)/rootdir/vendor/lib64/liblowi_wifihal_nl.so:system/vendor/lib64/liblowi_wifihal_nl.so
+    $(DEVICE_PATH)/rootdir/vendor/lib64/liblowi_wifihal_nl.so:system/vendor/lib64/liblowi_wifihal_nl.so \
+    $(DEVICE_PATH)/rootdir/vendor/lib64/libquipc_os_api.so:system/vendor/lib64/libquipc_os_api.so
 
 # tof
 PRODUCT_COPY_FILES += \
