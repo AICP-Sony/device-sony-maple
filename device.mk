@@ -96,6 +96,14 @@ PRODUCT_PROPERTY_OVERRIDES := \
     ro.sf.lcd_density=420 \
     ro.usb.pid_suffix=1F1
 
+# 4K for Youtube
+PRODUCT_PROPERTY_OVERRIDES += \
+    sys.display-size=3840x2160
+
+# HDR
+PRODUCT_PROPERTY_OVERRIDES += \
+    sdm.disable_hdr_lut_gen=1
+
 # Inherit from those products. Most specific first.
 $(call inherit-product, device/sony/yoshino/platform.mk)
 
