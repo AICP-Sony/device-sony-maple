@@ -104,15 +104,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     sdm.disable_hdr_lut_gen=1
 
-# Hardware Info
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.device.chipset=Qualcomm MSM8998 Snapdragon 835 \
-    ro.device.cpu=Octa-core (4x2.45 GHz Kryo & 4x1.9 GHz Kryo) \
-    ro.device.gpu=Adreno 540 \
-    ro.device.rear_cam=19 MP, f/2.0, 25mm \
-    ro.device.front_cam=13 MP, f/2.0, 22mm \
-    ro.device.screen_res=3840 x 2160 pixels (~807 ppi pixel density)
-
 #Set cutoff voltage to 3200mV
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.cutoff_voltage_mv=3200
