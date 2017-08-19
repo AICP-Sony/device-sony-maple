@@ -12,3 +12,10 @@ persist.dbg.ims_volte_enable=1
 persist.dbg.volte_avail_ovr=1
 persist.dbg.vt_avail_ovr=1
 persist.dbg.wfc_avail_ovr=1
+
+# System props for telephony
+ro.com.android.dataroaming=false
+persist.ims.disableUserAgent=1
+
+# System props for FR31351/RID004188
+persist.radio.wifi_disc_delay=2
