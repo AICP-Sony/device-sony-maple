@@ -19,3 +19,22 @@ persist.ims.disableUserAgent=1
 
 # System props for FR31351/RID004188
 persist.radio.wifi_disc_delay=2
+
+# System property for cabl
+ro.qualcomm.cabl=0
+
+#
+# system property determining camera HAL to be used for a Video call
+#
+# 1 is camera1
+# 2 or anything else is camera2
+persist.radio.VT_CAM_INTERFACE=2
+
+# enable navigation bar
+qemu.hw.mainkeys=0
+
+#property to enable VDS WFD solution
+persist.hwc.enable_vds=1
+
+#Expose aux camera for below packages
+camera.aux.packagelist=org.codeaurora.snapcam,com.qualcomm.saltproject,com.qualcomm.saltproject2
