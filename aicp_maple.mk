@@ -31,8 +31,6 @@ DEVICE_SPECIFIC_CAMERA_PATH := hardware/sony/camera
 USE_DEVICE_SPECIFIC_DATASERVICES := true
 DEVICE_SPECIFIC_DATASERVICES_PATH := vendor/qcom/opensource/dataservices
 
-AUDIO_FINE_TUNED_OPTIMIZATIONS := true
-
 # Inherit from those products. Most specific first.
 $(call inherit-product, device/sony/yoshino/platform.mk)
 $(call inherit-product, device/sony/maple/aosp_g8142.mk)
