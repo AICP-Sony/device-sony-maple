@@ -40,7 +40,15 @@ PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/rootdir/system/etc/acdbdata/Handset_cal.acdb:system/etc/acdbdata/Handset_cal.acdb \
     $(DEVICE_PATH)/rootdir/system/etc/acdbdata/Hdmi_cal.acdb:system/etc/acdbdata/Hdmi_cal.acdb \
     $(DEVICE_PATH)/rootdir/system/etc/acdbdata/Headset_cal.acdb:system/etc/acdbdata/Headset_cal.acdb \
-    $(DEVICE_PATH)/rootdir/system/etc/acdbdata/Speaker_cal.acdb:system/etc/acdbdata/Speaker_cal.acdb
+    $(DEVICE_PATH)/rootdir/system/etc/acdbdata/Speaker_cal.acdb:system/etc/acdbdata/Speaker_cal.acdb \
+    $(DEVICE_PATH)/rootdir/system/etc/acdbdata/Sony/Sony_yoshino_Bluetooth_cal.acdb:system/etc/acdbdata/Sony/Sony_yoshino_Bluetooth_cal.acdb \
+    $(DEVICE_PATH)/rootdir/system/etc/acdbdata/Sony/Sony_yoshino_General_cal.acdb:system/etc/acdbdata/Sony/Sony_yoshino_General_cal.acdb \
+    $(DEVICE_PATH)/rootdir/system/etc/acdbdata/Sony/Sony_yoshino_Global_cal.acdb:system/etc/acdbdata/Sony/Sony_yoshino_Global_cal.acdb \
+    $(DEVICE_PATH)/rootdir/system/etc/acdbdata/Sony/Sony_yoshino_Handset_cal.acdb:system/etc/acdbdata/Sony/Sony_yoshino_Handset_cal.acdb \
+    $(DEVICE_PATH)/rootdir/system/etc/acdbdata/Sony/Sony_yoshino_Hdmi_cal.acdb:system/etc/acdbdata/Sony/Sony_yoshino_Hdmi_cal.acdb \
+    $(DEVICE_PATH)/rootdir/system/etc/acdbdata/Sony/Sony_yoshino_Headset_cal.acdb:system/etc/acdbdata/Sony/Sony_yoshino_Headset_cal.acdb \
+    $(DEVICE_PATH)/rootdir/system/etc/acdbdata/Sony/Sony_yoshino_Speaker_cal.acdb:system/etc/acdbdata/Sony/Sony_yoshino_Speaker_cal.acdb \
+    $(DEVICE_PATH)/rootdir/system/etc/acdbdata/Sony/workspaceFile_Sony_yoshino.qwsp:system/etc/acdbdata/Sony/workspaceFile_Sony_yoshino.qwsp
 
 # Device Specific Permissions
 PRODUCT_COPY_FILES += \
@@ -61,6 +69,11 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/rootdir/system/lib/sensors.hal.tof.so:system/lib/sensors.hal.tof.so \
     $(DEVICE_PATH)/rootdir/system/etc/sensors/hals.conf:system/etc/sensors/hals.conf
+
+# soundfx
+PRODUCT_COPY_FILES += \
+    $(DEVICE_PATH)/rootdir/system/lib/soundfx/libsonypostprocbundle.so:system/lib/soundfx/libsonypostprocbundle.so \
+    $(DEVICE_PATH)/rootdir/system/lib/soundfx/libsonysweffect.so:system/lib/soundfx/libsonysweffect.so
 
 # Device Init
 PRODUCT_PACKAGES += \
